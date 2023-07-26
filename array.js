@@ -100,3 +100,74 @@ const index = value.indexOf(3);
 // Output: index = 2
 
 // These array methods can be incredibly useful for manipulating arrays and working with data in JavaScript.
+
+
+
+
+// ********************
+// LOOP ON ARRAY
+// ********************
+
+
+
+// 1. For Loop: 
+
+// The for loop is a basic and versatile loop used to iterate over elements in an array.
+// It consists of three parts:
+
+// Exapmle:
+
+const values = [1, 2, 3, 4, 5];
+for (let i = 0; i < values.length; i++) {
+  console.log(values[i]);
+}
+// Output: 1 2 3 4 5
+
+
+// 2. forEach:
+
+// The forEach loop is a method available on arrays, and it executes a provided function once for each element
+// in the array. It simplifies array iteration and is useful when you want to perform an operation on each item
+// without manually managing the loop counter.
+
+// Example:
+
+const num = [1, 2, 3, 4, 5];
+num.forEach((number) => {
+  console.log(number);
+});
+// Output: 1 2 3 4 5
+
+
+// 3. Map:
+
+// The map method is similar to the forEach loop, but it creates a new array by calling a provided function on 
+// every element in the original array. It returns a new array with the results of the function applied to each 
+// element. This is particularly useful when you want to transform or manipulate the original array's elements.
+
+// Example:
+
+const singleNumbers = [1, 2, 3, 4, 5];
+const doubledNumber = singleNumbers.map((number) => {
+  return number * 2;
+});
+console.log(doubledNumber);
+// Output: [2, 4, 6, 8, 10]
+
+
+
+// In summary:
+
+// * for loop is a traditional looping construct that requires manual control of the loop counter and is useful 
+// when you need more control over the loop execution.
+
+// * forEach is a simple and expressive method for looping through arrays when you want to perform an operation 
+// on each item.
+
+// * map is used when you want to transform the original array into a new array based on some operation applied 
+// to each element. It returns a new array without mutating the original one.
+
+
+
+
+
